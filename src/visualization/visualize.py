@@ -2,11 +2,12 @@ import pathlib
 import joblib
 import sys
 import yaml
+import fsspec
 import pandas as pd
 from sklearn import metrics
 from sklearn import tree
 from dvclive import Live
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
 
 def evaluate(model, X, y, split, live, save_path):
