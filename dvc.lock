@@ -37,9 +37,9 @@ stages:
       nfiles: 3
     - path: .\models\model.joblib
       hash: md5
-      md5: 32b14b775eee804fe6557af6ec3f2995
-      size: 398777
+      md5: 2a7735d3f21610b333b998f4024021cf
+      size: 399609
     - path: .\src\visualization\visualize.py
       hash: md5
-      md5: b602d988d452043b4c602dffc807664f
-      size: 3713
+      md5: 948cd9479e608b1b7819f739df16b4a5
+      size: 3723
