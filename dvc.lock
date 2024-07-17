@@ -14,13 +14,13 @@ stages:
     params:
       params.yaml:
         make_dataset.seed: 2023
-        make_dataset.test_split: 0.2
+        make_dataset.test_split: 0.3
   train_model:
     cmd: python .\src\models\train_model.py .\data\processed\
     deps:
     - path: .\data\processed\
       hash: md5
-      md5: 85238d684fd82ab50273b754697025d9.dir
+      md5: ce9ce5406ae0d8cee486d4f77feaa571.dir
       size: 151102527
       nfiles: 3
     - path: .\src\models\train_model.py
@@ -32,13 +32,13 @@ stages:
     deps:
     - path: .\data\processed\
       hash: md5
-      md5: 85238d684fd82ab50273b754697025d9.dir
+      md5: ce9ce5406ae0d8cee486d4f77feaa571.dir
       size: 151102527
       nfiles: 3
     - path: .\models\model.joblib
       hash: md5
-      md5: 2a7735d3f21610b333b998f4024021cf
-      size: 399609
+      md5: 0174cf3b8b2ce7de8e692a340b5874bd
+      size: 873209
     - path: .\src\visualization\visualize.py
       hash: md5
       md5: 948cd9479e608b1b7819f739df16b4a5
